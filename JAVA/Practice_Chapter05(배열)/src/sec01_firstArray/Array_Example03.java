@@ -8,8 +8,7 @@ public class Array_Example03 {
 		int[] iArr1 = new int[10];//선언함. 0으로 자동초기화
 		int[] iArr2 = new int[10];
 		int[] iArr3 = new int[] {100,96,80,70,60};//선언과 동시에 초기화
-		int[] iArr4 = new int[] {100,96,80,70,60};//선언과 동시에 초기화
-		
+		int[] iArr4 = new int[] {100,96,80,70,60};//선언과 동시에 초기화		
 		char[] chArr = new char[] {'a','b','c','d'};
 		
 		//int arr[] = new int[50]
@@ -50,7 +49,7 @@ public class Array_Example03 {
 		System.out.println(iArr3.toString());
 		System.out.println(iArr3);
 		System.out.println(chArr.toString());
-		//char타임만 toString()을 호출해야 주소가 나오고,
+		//Char타임만 toString()을 호출해야 주소가 나오고,
 		//toString()을 호출하지 아니하면 그냥 값들이 출력!!
 		System.out.println(chArr.toString());
 		System.out.println(chArr);

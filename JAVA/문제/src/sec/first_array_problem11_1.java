@@ -8,7 +8,6 @@ public class first_array_problem11_1 {
 		String[] clap = new String[] {"박수 한번", "박수 두번"};
 		Scanner sc = new Scanner(System.in);
 		int number = sc.nextInt();
-		
 		for(int i=0; i<number;i++) {
 			int count =-1;
 			int answer =i;

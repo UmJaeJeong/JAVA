@@ -39,11 +39,13 @@ public class Second_Array_Example02 {
 				totalsum +=sum;
 				avg = sum/(float)score[i].length;
 				averagesum +=avg;
-				System.out.printf("\t%d \t%.2f%n",sum, avg);
+				System.out.printf("\t%d \t%f%n",sum, avg);
 			}
 			averagesum /=(float)score.length;
 			System.out.println("=======================================");
-			System.out.printf("รัมก \t%d \t%d \t%d \t%d \t%d",korTotal,engTotal,mathTotal,totalsum,averagesum);
+			System.out.printf("รัมก \t%d \t%d \t%d \t%d \t%f",korTotal,engTotal,mathTotal,totalsum,averagesum);
+			System.out.println();
+			
 	}
 
 }

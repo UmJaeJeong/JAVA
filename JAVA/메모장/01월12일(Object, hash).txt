@@ -1,0 +1,11 @@
+Vector -> list계열(ex) 병원 순서대기표
+	  (순서를 유지하면서 값의 중복은 허용)
+
+Set -> 순서를 가지고 있다.
+
+Map -> key와 Value를 가지고있다.
+
+(Hash가 접두사로 붙은거라면, hashCode()를 먼저 부르고 equals를 사용)
+
+//Hash를 사용하는 궁극적인 이유
+=> Hashing

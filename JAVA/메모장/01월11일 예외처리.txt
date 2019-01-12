@@ -1,0 +1,40 @@
+<<<예외처리(Exception Handling)>>>
+
+예외처리의 목적
+=> 프로그램을 정상적으로 되돌리는것 
+
+예외의 종류
+1) 일반(컴파일 체크) 예외(Excemption) - checked exception
+	=> try-catch문 이용
+2) 실행 예외(RuntimeException) - unchecked exception
+
+!RuntimeException 클래스를 상속 받았는가에	!
+!따라 일반예외인지, 실행예외인지 구분가능하다	!
+
+---------------------------------------------------
+Debugging = > 에러를 잡아가는 과정
+
+finally => default와 유사(switch문)//예외가 발생하던가 말던가 무조건 실행
+
+try{}구간에서 예외가 있으면
+catch{}구간을 실행한다.
+
+<<다중 catch문>>
+=> 예외처리를 정확하게 하고싶을떄 사용함
+   거의, 사용하지 않음
+--------------------------------------------------
+<<현업에서도 많이사용함>>
+throw(던지다) = > 예외를 강제적으로 발생하는것 (thorw new exception)
+		 
+throws = > 보통 메서드 옆에 붙는다.
+	   ex) thorws Exception
+	   예외를 던지는것(되넘기기.), 떠넘긴다.
+
+ex)
+public static void main(String[] args) throws Exception{
+	//main()에서 Exception이 발생할 경우
+	//main()을 실행하는 JVM에서 자동으로 Exception을 해결하여 보여줌
+	//main을 실행한은 곳은 JVM이다.
+	//main()에서 예외가 일어날경우 그 상태에서 종료 된다.
+}
+--------------------------------------------------

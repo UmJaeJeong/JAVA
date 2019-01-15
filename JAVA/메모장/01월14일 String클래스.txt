@@ -1,0 +1,35 @@
+디코딩 : 사람이 알아보기 쉽게만드는 과정(영상이나 그림으로 변환하는 작업)
+
+인코딩 : 기계가 알아보기 쉽게 만드는 과정(아날로그신호 -> 디지털신호)
+
+문자셋 종류
+1.UTF-8 : 유니코드 인코딩
+2.EUC-KR : 한글완성형 인코딩
+
+offset : 거리 (시작점~ 도착점)
+
+
+new Scanner(System.in);
+	    ->System.in 부분 정적상수!!!
+
+Enter를 해주면 2byte를 잡아먹기 때문에 
+byte[] bytes = new byte[100];
+int readByteNo = System.in.read(bytes);
+String str = new String(byte[] bytes, int offset, int length, String charsetName);
+	  => new String(bytes, 0, readByteNo-2);//이부분에서 -2를 해주는 이유 
+
+String 객체는 새로운 공간을 만들어 사용한다.
+메모리적으로는 String을 쓰는 것은 좋지 않다.
+
+-------String클래스 함수--------
+SubString(문자열 잘라내기)
+substring(int begin_idx, int end_idx);//대부분 끝 인덱스를 포함하지 않는다.
+
+toLowerCase(), toUpperCase() (알파벳 대소문자 변환)
+
+trim()  (문자열 앞뒤 공백 잘라내기)
+
+valueOf() //정적메서드 모든것을 모두 문자열화 시키는 것 
+
+
+

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="334.0" prefWidth="600.0" style="-fx-background-color: #808080;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sec06.exam05_slider_progressbar.RootController">
+	<children>
+		<Slider fx:id="sliderMedia" layoutX="14.0" layoutY="264.0" prefHeight="14.0" prefWidth="470.0" />
+		<StackPane layoutX="14.0" layoutY="14.0" prefHeight="250.0" prefWidth="470.0">
+			<children>
+				<ImageView fx:id="imageView" fitHeight="250.0" fitWidth="470.0" pickOnBounds="true" preserveRatio="true">
+					<image>
+						<Image url="@images.audio.png" />
+					</image>
+				</ImageView>
+				<MediaView fx:id="mediaView" fitHeight="250.0" fitWidth="470.0" />
+			</children>
+		</StackPane>
+		<Button fx:id="btnPause" layoutX="62.0" layoutY="281.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="50.0">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@media/002-big-pause-symbol.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+		<Button fx:id="btnPaly" layoutX="183.0" layoutY="283.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="50.0">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@media/001-play-button.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+		<Button fx:id="btnStop" layoutX="300.0" layoutY="283.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="50.0">
+         <graphic>
+            <ImageView fitHeight="20.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@media/003-stop-button.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+		<Label fx:id="labelTime" alignment="CENTER" layoutX="503.0" layoutY="45.0" prefHeight="15.0" prefWidth="90.0" text="시간" />
+		<ProgressBar fx:id="progressBar" layoutX="503.0" layoutY="70.0" prefHeight="18.0" prefWidth="90.0" progress="0.0" />
+		<Label alignment="CENTER" layoutX="503.0" layoutY="116.0" prefHeight="15.0" prefWidth="90.0" text="0/0 sec" />
+		<ProgressIndicator fx:id="progressIndiator" layoutX="513.0" layoutY="146.0" prefHeight="83.0" prefWidth="71.0" progress="0.0" />
+		<Label layoutX="408.0" layoutY="287.0" text="Volume" />
+		<Slider fx:id="sliderVolume" layoutX="463.0" layoutY="295.0" prefHeight="14.0" prefWidth="121.0" showTickLabels="true" showTickMarks="true" />
+	</children>
+</AnchorPane>

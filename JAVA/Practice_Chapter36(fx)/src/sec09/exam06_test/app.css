@@ -1,0 +1,38 @@
+#root{
+	/*padding은 fxml파일에서도 되고, css파일에서 적용해도 된다. */
+	-fx-padding: 10;
+	-fx-background-color: #964b00;
+	
+}
+
+#title_txt{
+	/*글자크기 35, Arial Balck채 , 굵게, 선형 그라디언트 아래방향 파란색에서
+	 * 흰색으로 변함
+	 */
+	 
+	 -fx-font-size: 35;
+	 -fx-font-family: "Arial Black";
+	 -fx-font-weight: bold;
+	 -fx-text-fill: linear-gradient(to right, black, white);
+}
+
+.login{
+	-fx-font-weight: bold;
+}
+
+Button{
+	-fx-text-fill: black;
+	-fx-background-color: #00963e;
+	-fx-border-color: black;
+}
+Button:hover{
+	-fx-background-color: #5f9600;
+}
+
+Button:pressed{
+	-fx-background-color: #742322;
+}
+
+.field:focused{
+	-fx-background-color: yellow;
+}

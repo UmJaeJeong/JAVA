@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="150.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="sec10.exam02_test.rootController">
+   <children>
+      <ProgressBar fx:id="progressbar" layoutX="50.0" layoutY="39.0" prefWidth="200.0" progress="0.0" />
+      <Label fx:id="label" layoutX="50.0" layoutY="68.0" text="진행률 : 0%" />
+      <Button fx:id="btnstart" layoutX="66.0" layoutY="100.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="70.0" text="시작" />
+      <Button fx:id="btnstop" layoutX="171.0" layoutY="100.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="70.0" text="멈춤" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.HBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Label?>
+
+<HBox id="root" xmlns:fx="http://javafx.com/fxml/1" spacing="20">
+	<padding>
+		<Insets topRightBottomLeft="10" />
+	</padding>
+	<children>
+		<Label id="welcome-text" text="Welcome" />
+	</children>
+</HBox>
+

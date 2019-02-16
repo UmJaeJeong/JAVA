@@ -1,0 +1,18 @@
+/*TextField가 입력가능한 상태가 되어승ㄹ때 적용함 */
+TextField:focused{
+	-fx-background-color: yellow;	/*배경색 노랑 */
+	-fx-border-color: blue;		/*외부경계선 파랑 */
+}
+
+/*Button에 마우스가 올라가있는 상태에 적용 */
+Button:hover{
+	-fx-background-color: yellow;
+	-fx-border-color: blue;
+}
+
+/*Button 마우스 클릭이 되었을때 적용 */
+Button:pressed{
+	-fx-background-color: red;
+	-fx-border-color: blue;
+}
+	
